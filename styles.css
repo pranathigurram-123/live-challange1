@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff4f7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 300px 230px 230px;
+
+    gap: 20px;
+}
+
+/* All cards */
+
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    color: #3d2430;
+}
+
+/* 1. Fashion Hub */
+
+.logo {
+    background-color: #ffd6e0;
+}
+
+.logo h1 {
+    color: #b52b5a;
+    font-size: 40px;
+}
+
+.logo p {
+    color: #6d4050;
+}
+
+/* 2. Main */
+
+.main {
+    background-color: #7b3fc6;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.main h1 {
+    font-size: 45px;
+}
+
+.main h2 {
+    color: #ffd166;
+    font-size: 32px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+/* 3. Saree */
+
+.saree {
+    background-color: #d9c2ff;
+}
+
+.saree h2 {
+    color: #5b2c83;
+    font-size: 32px;
+}
+
+.saree p {
+    color: #613b70;
+}
+
+/* 4. Lehenga */
+
+.lehenga {
+    background-color: #ffd166;
+}
+
+.lehenga h2 {
+    color: #7a3e00;
+    font-size: 32px;
+}
+
+/* 5. Kurta */
+
+.kurta {
+    background-color: #b8f2e6;
+}
+
+.kurta h2 {
+    color: #087f70;
+    font-size: 30px;
+}
+
+.kurta p {
+    color: #17665d;
+}
+
+/* 6. Offer */
+
+.offer {
+    background-color: #ff8fab;
+    color: white;
+}
+
+.offer h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.offer h2 {
+    color: #7a1740;
+    font-size: 35px;
+}
+
+/* 7. New Arrivals */
+
+.new {
+    background-color: #fff0b3;
+}
+
+.new h2 {
+    color: #8a5a00;
+}
+
+.products {
+    display: flex;
+    gap: 15px;
+}
+
+.products div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.products h3 {
+    color: #a42d5c;
+}
+
+/* 8. Bottom */
+
+.bottom {
+    background-color: #c7ceff;
+
+    grid-column: 2 / 4;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom h1 {
+    color: #49369b;
+    font-size: 35px;
+}
+
+.bottom p {
+    color: #514b78;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+
+    background-color: #ffcf56;
+    color: #572746;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffae00;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        display: block;
+        margin: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+        min-height: 250px;
+    }
+
+    .main h1 {
+        font-size: 35px;
+    }
+
+    .products {
+        display: block;
+    }
+
+    .products div {
+        margin-bottom: 10px;
+    }
+
+    .bottom {
+        display: block;
+        text-align: center;
+    }
+}
